@@ -1,0 +1,82 @@
+textarea {
+  resize: none;
+}
+
+#app {
+  margin-bottom: 50px !important;
+}
+
+/* jQuery UI Accordion */
+.ui-accordion {
+    background: transparent !important;
+    color: white !important;
+}
+
+.ui-accordion .ui-accordion-header {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    padding: 1rem 0 !important;
+    margin: 0 !important;
+    transition: color 0.15s linear !important;
+}
+
+.ui-accordion .ui-accordion-header:hover {
+    color: #7C3AED !important;
+}
+
+.ui-accordion .ui-accordion-header-active {
+    color: #7C3AED !important;
+    border-bottom: 1px solid #7C3AED !important;
+}
+
+.ui-accordion .ui-accordion-content {
+    background: transparent !important;
+    border: none !important;
+    padding: 1rem 0 !important;
+    opacity: 0;
+    transition: opacity 0.15s linear !important;
+}
+
+.ui-accordion .ui-accordion-content-active {
+    opacity: 1;
+}
+
+.ui-accordion .ui-accordion-animate {
+    transition: none !important;
+}
+
+.ui-accordion .ui-icon {
+    filter: invert(1);
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(220deg);
+}
+
+/* Prism */
+pre[class*="language-"],
+code[class*="language-"] {
+    background: transparent !important;
+    text-shadow: none !important;
+    border-radius: 0.5rem;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.bg-dark-lighter {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}

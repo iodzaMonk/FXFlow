@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FXFlow</title>
+
+    <!-- Add Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Add Element Plus CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
+    <link rel="stylesheet" href="./styles.css">
+
+
+    <!-- Configure Tailwind -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#3ABEF9',
+                            dark: '#C65BCF'
+                        },
+                        secondary: {
+                            DEFAULT: '#3572EF',
+                            dark: '#000000'
+                        },
+                        dark: {
+                            DEFAULT: '#001F3F',
+                            lighter: '#263859'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+      textarea {
+        resize: none !important;
+      }
+        .el-dialog {
+            --el-dialog-bg-color: #12141F !important;
+            --el-dialog-border-radius: 1rem;
+        }
+
+        .el-dialog__header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-right: 0;
+            padding-bottom: 1rem;
+        }
+
+        .el-dialog__headerbtn {
+            color: white !important;
+        }
+
+        .el-dialog__headerbtn:hover .el-dialog__close {
+            color: var(--el-color-primary) !important;
+        }
+
+        .el-dialog__body {
+            padding: 1.5rem;
+        }
+
+        video::-webkit-media-controls-panel {
+            background: rgba(18, 20, 31, 0.8);
+        }
+
+        video::-webkit-media-controls-play-button,
+        video::-webkit-media-controls-timeline,
+        video::-webkit-media-controls-current-time-display,
+        video::-webkit-media-controls-time-remaining-display,
+        video::-webkit-media-controls-mute-button,
+        video::-webkit-media-controls-volume-slider {
+            color: white;
+        }
+    </style>
+
+    <!-- jQuery-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Prism -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+</head>
+<body class="bg-dark text-white font-sans">
+    <div id="app"></div>
+    <!-- Vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- Element Plus -->
+    <script src="https://unpkg.com/element-plus"></script>
+
+    <!-- Element Plus Icons -->
+    <script src="https://unpkg.com/@element-plus/icons-vue"></script>
+
+
+    <script type="module">
+        import { ElementPlus } from 'https://unpkg.com/element-plus'
+        window.ElementPlus = ElementPlus
+    </script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
